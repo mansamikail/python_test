@@ -1,1 +1,2 @@
-print(f"{int(input())*2} minute")
+
+a = 28
