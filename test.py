@@ -1,4 +1,4 @@
-a = int(input('enter the number'))
-b = int(input('enter the number'))
-c = a+b
-print(c)
+n = 4
+for i in range(n+1):
+    print(i*'*')
+
