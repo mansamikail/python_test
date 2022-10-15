@@ -19,16 +19,21 @@
 #             print(' ', end='')
 #     print()
 
-k = 1
-for i in range(7):
-    print(' '*(7-i-1),end='')
-    print('*'*k)
-    k += 2
+# k = 1
+# for i in range(7):
+#     print(' '*(7-i-1),end='')
+#     print('*'*k)
+#     k += 2
+#
+# for i in range(6):
+#     for j in range(5):
+#         if ((j == 0 or j == 4) and (i != 0 or i != 3)) or ((i == 0 or i == 3) and (0 < j < 4)):
+#             print("*", end='')
+#         else:
+#             print(' ', end='')
+#     print()
 
-for i in range(6):
-    for j in range(5):
-        if ((j == 0 or j == 4) and (i != 0 or i != 3)) or ((i == 0 or i == 3) and (0 < j < 4)):
-            print("*", end='')
-        else:
-            print(' ', end='')
-    print()
+x, y = list(map(int, input().split()))
+price = [0, 4, 4.50, 5, 2, 1.50]
+pay = price[x]*y
+print(f'Total: R$ {pay:.2f}')
